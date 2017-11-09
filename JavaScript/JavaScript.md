@@ -1,8 +1,14 @@
 ﻿# JavaScript
 
-标签（空格分隔）： 复习
+标签： 复习
 
 ---
+
+### JavaScript的三大组成部分是：
+
+1、ECMAScript：JavaScript的核心;
+2、文档对象模型（DOM）：DOM（文档对象模型）是 HTML 和 XML 的应用程序接口（API）。
+3、浏览器对象模型（BOM）对浏览器窗口进行访问和操作。
 
 ### 数据类型
 

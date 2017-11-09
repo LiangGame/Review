@@ -241,7 +241,7 @@
     
 ## 6.解释css sprites，如何使用。 
 
-    Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器器对图片的请求数量;其实就是把网页中一些背景图片整合到一张图片文件中，再利用CSS的“background-image”，“background-repeat”，“background-position”的组合进行背景定位，background-position可以用数字精确的定位出背景图片的位置。 
+    Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量;其实就是把网页中一些背景图片整合到一张图片文件中，再利用CSS的“background-image”，“background-repeat”，“background-position”的组合进行背景定位，background-position可以用数字精确的定位出背景图片的位置。 
 
 ## 7.清除浮动的几种方式，各自的优缺点 。
 
@@ -260,14 +260,14 @@
     -moz-transition: all .5s;  // 火狐
     -o-transition: all .5s;    // 欧朋
     transition: all .5s;       // 统一标准
- } 
+ }
 ```
 * 渐进增强 
 
-        progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器器进行效果、交互等改进和追加功能达到更好的用户体验。 
+        progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。 
 * 优雅降级  
 
-        graceful degradation：一开始就构建完整的功能，然后再针对低版本浏览器器进行兼容。 
+        graceful degradation：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。 
 > 区别： 
 优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要。降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。
 
