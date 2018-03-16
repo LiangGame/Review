@@ -52,6 +52,25 @@ http.createServer(function(req, res){
     });
 }).listen(3000);
 ```
-
+## 解决跨域请求
+> 在app.js中, 路由前添加↓↓↓↓↓
+```
+app.all('*', function (req, res, next) {
+  console.log(req.headers.origin);
+  // postman测试输出undefined,添加!req.headers.origin予以通过
+  if (req.headers.origin == 'http://localhost:4200' || !req.headers.origin) { 
+    res.header("Access-Control-Allow-Origin", req.headers.origin);
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild,token');
+    res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+    res.header("Access-Control-Allow-Credentials", true);
+    if (req.method == 'OPTIONS') {
+      res.sendStatus(200); //让options请求快速返回/
+    }
+    else {
+      next();
+    }
+  }
+  ```
+});
 
 
