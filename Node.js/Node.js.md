@@ -65,8 +65,7 @@ app.all('*', function (req, res, next) {
     res.header("Access-Control-Allow-Credentials", true);
     if (req.method == 'OPTIONS') {
       res.sendStatus(200); //让options请求快速返回/
-    }
-    else {
+    } else {
       next();
     }
   }
